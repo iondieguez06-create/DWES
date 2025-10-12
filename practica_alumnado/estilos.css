@@ -1,0 +1,138 @@
+body {
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #1f1f1f;
+    color: #eaeaea;
+    margin: 0;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+.contenedor, .cont {
+    background: #2a2a2a;
+    padding: 28px;
+    border-radius: 6px;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.28);
+    text-align: left;
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+
+#boton {
+    background-color: transparent;
+    color: #f0b35a;
+    border: 2px solid #f0b35a;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin: 0.5rem 0;
+}
+
+#boton:hover {
+    background-color: #f0b35a;
+    color: #1f1f1f;
+}
+
+h1 {
+    margin: 8px 0 16px 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+}
+
+.barra {
+    margin-bottom: 12px;
+}
+
+.login-form {
+    display: block;
+}
+
+.login-form label {
+    display: block;
+    font-weight: 600;
+    color: #d6d6d6;
+    margin-top: 10px;
+}
+
+.login-form input {
+    padding: 9px 10px;
+    background: #202020;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    color: #eaeaea;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+.login-form input:focus {
+    border-color: #f0b35a;
+    box-shadow: 0 0 0 3px rgba(240,179,90,0.25);
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #3f3f3f;
+    margin: 18px 0;
+}
+
+button {
+    background: #3b7bbf;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.06s ease;
+}
+
+button:hover {
+    background: #5896d8;
+}
+
+.radio-group {
+    margin: 6px 0 14px 0;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 14px;
+    color: #d0d0d0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.grid {
+    font-size: 0;
+    margin: 0 -8px;
+}
+
+.grid .col {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.acciones {
+    text-align: right;
+}
+
+
