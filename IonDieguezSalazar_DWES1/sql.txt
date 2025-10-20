@@ -1,8 +1,0 @@
-CREATE DATABASE merceria;
-CREATE TABLE stock2(
-	id int PRIMARY KEY AUTO_INCREMENT,
-    nombre varchar(50),
-    stock int CHECK (stock>=0)
-    precioCompra int,
-    precioVenta int CHECK (precioVenta>precioCompra)
-);
