@@ -1,0 +1,1 @@
+Docker compose es una herramienta externa que complementa a docker en si, la cual te facilita la coordinacion y la gestion de multiples contenedores.

@@ -1,3 +1,58 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="cont layout">
+        <!-- Barra superior con Volver y título -->
+        <div class="barra">
+            <a href="eleccion.html"><button id="boton">Volver</button></a>
+            <h1>Crear cuenta</h1>
+        </div>
+
+        <form class="login-form ficha panel" method="POST" action="registro.php">
+            <!-- Dos columnas: izquierda (datos personales), derecha (acceso) -->
+            <div class="grid">
+                <div class="col izq">
+                    <label for="fld_nombre">Nombre</label>
+                    <input id="fld_nombre" type="text" name="nombre" required>
+
+                    <label for="fld_apell">Apellidos</label>
+                    <input id="fld_apell" type="text" name="apellidos" required>
+
+                    <label for="fld_fnac">Fecha de Nacimiento</label>
+                    <input id="fld_fnac" type="date" name="fecha_nacimiento" required>
+                </div>
+
+                <div class="col der">
+                    <label for="fld_mail">Correo electrónico</label>
+                    <input id="fld_mail" type="email" name="email" required>
+
+                    <label for="fld_pass">Contraseña</label>
+                    <input id="fld_pass" type="password" name="contrasena" required>
+                </div>
+            </div>
+
+            <hr>
+
+            <label>Curso</label>
+            <div class="radio-group opciones fila">
+                <label><input id="r1" type="radio" name="curso" value="1" required> 1</label>
+                <label><input id="r2" type="radio" name="curso" value="2"> 2</label>
+                <label><input id="r3" type="radio" name="curso" value="3"> 3</label>
+                <label><input id="r4" type="radio" name="curso" value="4"> 4</label>
+            </div>
+
+            <hr>
+
+            <div class="acciones">
+                <button type="submit">Enviar registro</button>
+            </div>
+        </form>
+    </div>
+</body>
 </html>

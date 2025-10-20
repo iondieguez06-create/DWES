@@ -45,39 +45,6 @@ h1 {
     letter-spacing: 0.2px;
 }
 
-.barra {
-    margin-bottom: 12px;
-}
-
-.login-form {
-    display: block;
-}
-
-.login-form label {
-    display: block;
-    font-weight: 600;
-    color: #d6d6d6;
-    margin-top: 10px;
-}
-
-.login-form input {
-    padding: 9px 10px;
-    background: #202020;
-    border: 1px solid #4a4a4a;
-    border-radius: 4px;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    width: 100%;
-    color: #eaeaea;
-    margin-top: 4px;
-    box-sizing: border-box;
-}
-
-.login-form input:focus {
-    border-color: #f0b35a;
-    box-shadow: 0 0 0 3px rgba(240,179,90,0.25);
-}
-
 hr {
     border: none;
     border-top: 1px dashed #3f3f3f;
@@ -100,22 +67,7 @@ button:hover {
     background: #5896d8;
 }
 
-.radio-group {
-    margin: 6px 0 14px 0;
-}
 
-.radio-group label {
-    display: inline-block;
-    margin-right: 14px;
-    color: #d0d0d0;
-    font-weight: normal;
-    cursor: pointer;
-}
-
-.radio-group input[type="radio"] {
-    margin-right: 6px;
-    vertical-align: middle;
-}
 
 .grid {
     font-size: 0;
