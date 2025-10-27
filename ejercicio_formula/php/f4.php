@@ -1,7 +1,6 @@
 <?php
-declare(strict_types=1);
 
-final class F4 extends Monoplaza{
+ class F4 extends Monoplaza{
     private string $paisCategoria;
 
     public function __construct(

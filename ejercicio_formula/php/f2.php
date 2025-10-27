@@ -1,6 +1,6 @@
 <?php
 
-final class F2 extends Monoplaza
+ class F2 extends Monoplaza
 {
     private bool $tieneSuperlicencia;
 

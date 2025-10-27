@@ -1,7 +1,6 @@
 <?php
-declare(strict_types=1);
 
-final class F1 extends Monoplaza
+     class F1 extends Monoplaza
 {
     private string $patrocinadorPrincipal;
 
@@ -30,28 +29,23 @@ final class F1 extends Monoplaza
             if (!$this->posicionValida($posicion)) {
                 return; 
             }
-            $tablaPuntos = [10,8,7,6,5,4,3,2,1];
+            $tablaPuntos = [25,18,15,12,10,8,6,4,2,1];
             $puntos=0;
-            if ($posicion >= 1 && $posicion <= 9) {
+            if ($posicion >= 1 && $posicion <= 10) {
                 $puntos = $tablaPuntos[$posicion - 1];
             }
-
+            if ($vueltaRapida && $posicion <= 10) {
+                $puntos += 1;
+            }
             $this->puntos += $puntos;
 
 
         }
     public function posicionValida(int $posicion): bool {
-        return $posicion >= 1 && $posicion <= 24;
+        return $posicion >= 1 && $posicion <= 22;
     }
-    public function subirAF3(string $academia): f3
-{
-    return new f3(
-        $this->nombrePiloto,
-        $this->nacionalidad,
-        $this->numero,
-        $this->escuderia,
-        $academia,
-        $this->puntos
-    );
-}
+   public function subirAF1(): void
+    {
+        echo "F1 es la mejor, no puedes subir mas arriba";
+    }
 }

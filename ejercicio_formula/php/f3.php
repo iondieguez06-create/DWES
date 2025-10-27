@@ -1,6 +1,6 @@
 <?php
 
-final class F3 extends Monoplaza
+ class F3 extends Monoplaza
 {
     private string $academia;
 
