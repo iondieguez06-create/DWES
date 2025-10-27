@@ -34,9 +34,9 @@ final class F4 extends Monoplaza{
     public function posicionValida(int $posicion): bool {
         return $posicion >= 1 && $posicion <= 30;
     }
-    public function subirAF3(string $academia): f3
+    public function subirAF3(string $academia): F3
 {
-    return new f3(
+    return new F3(
         $this->nombrePiloto,
         $this->nacionalidad,
         $this->numero,

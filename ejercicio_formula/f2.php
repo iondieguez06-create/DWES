@@ -26,30 +26,32 @@ final class F2 extends Monoplaza
         $this->tieneSuperlicencia = $tieneSuperlicencia;
     }
     public function otorgarPuntos(int $posicion, bool $vueltaRapida): void {
-        if (!$this->posicionValida($posicion)) {
-            return; 
+            if (!$this->posicionValida($posicion)) {
+                return; 
+            }
+            $tablaPuntos = [10,8,7,6,5,4,3,2,1];
+            $puntos=0;
+            if ($posicion >= 1 && $posicion <= 9) {
+                $puntos = $tablaPuntos[$posicion - 1];
+            }
+            if ($vueltaRapida && $posicion <= 10) {
+                $puntos += 1;
+            }
+            $this->puntos += $puntos;
+
+
         }
-        $tablaPuntos = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1];
-
-        if ($posicion >= 1 && $posicion <= 10) {
-            $puntos = $tablaPuntos[$posicion - 1];
-        }
-
-        $this->puntos += $puntos;
-
-
-    }
     public function posicionValida(int $posicion): bool {
-        return $posicion >= 1 && $posicion <= 30;
+        return $posicion >= 1 && $posicion <= 24;
     }
-    public function subirAF3(string $academia): f3
+    public function subirAF1(string $patrocinadorPrincipal): F1
 {
-    return new f3(
+    return new F1(
         $this->nombrePiloto,
         $this->nacionalidad,
         $this->numero,
         $this->escuderia,
-        $academia,
+        $patrocinadorPrincipal,
         $this->puntos
     );
 }
