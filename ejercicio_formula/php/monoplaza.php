@@ -25,6 +25,9 @@ abstract class Monoplaza
     abstract public function otorgarPuntos(int $posicion, bool $vueltaRapida): void;
 
     abstract public function posicionValida(int $posicion): bool;
+    public function __toString(): string {
+    return "Piloto: {$this->nombrePiloto} | Nacionalidad: {$this->nacionalidad} | Nº {$this->numero} | Escudería: {$this->escuderia} | Puntos: {$this->puntos}";
+}
 
     
 }
